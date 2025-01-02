@@ -57,7 +57,7 @@ body {
 
 mark {
 	background-color: transparent;
-	color: black;
+	color: inherit;
 }
 
 input::-moz-focus-inner {
@@ -1812,7 +1812,7 @@ input, select, textarea {
 					font-size: 26px;
 					height: 48px;
 					line-height: 48px;
-					text-align: center;
+					text-align: justify;
 					outline: 0;
 					overflow: hidden;
 					text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.1);
@@ -1913,7 +1913,7 @@ input, select, textarea {
 	.box {
 		background: #fff;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
-		text-align: center;
+		text-align: justify;
 		padding: 2em;
 	}
 
@@ -1990,7 +1990,7 @@ input, select, textarea {
 		background-image: url("images/bg.png");
 		box-shadow: inset 0px 1px 0px 0px rgba(0, 0, 0, 0.05), inset 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		padding: 8em 0 8em 0;
-		text-align: center;
+		text-align: justify;
 	}
 
 		.wrapper.style1 {

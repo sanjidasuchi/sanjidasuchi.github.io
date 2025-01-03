@@ -124,7 +124,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #3e3e3e;
+		color: #000;
 	}
 
 	i, em {
@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #000;
+			background-color: #fff;
 		}
 
 		.wrapper.style2 {
@@ -2036,7 +2036,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #000;
+		background-color: #282828;
 		text-align: center;
 		position: fixed;
 		left: 0;

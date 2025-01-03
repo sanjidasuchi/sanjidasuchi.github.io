@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #000;
+			background-color: #282828;
 		}
 
 		.wrapper.style2 {
@@ -2130,7 +2130,7 @@ input, select, textarea {
 		}
 
 			#top p a {
-				color: inherit;
+				color: #fff;
 			}
 
 	#contact footer {

@@ -124,7 +124,7 @@ input, select, textarea {
 
 	b, strong {
 		font-weight: 600;
-		color: #fff;
+		color: #000;
 	}
 
 	i, em {
@@ -2129,6 +2129,7 @@ input, select, textarea {
 		#top p {
 			font-size: 1.5em;
 			line-height: 1.75em;
+			color:#fff;
 		}
 
 			#top p a {

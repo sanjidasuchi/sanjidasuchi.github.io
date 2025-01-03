@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: inherit;
+		color: #000;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: #282828;
 		}
 
 		.wrapper.style2 {

@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #fff;
+			background-color: #000;
 		}
 
 		.wrapper.style2 {
@@ -2036,7 +2036,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #fff;
+		background-color: #000;
 		text-align: center;
 		position: fixed;
 		left: 0;

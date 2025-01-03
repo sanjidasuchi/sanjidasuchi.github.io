@@ -150,7 +150,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #3e3e3e;
+		color: #fff;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -1995,7 +1995,7 @@ input, select, textarea {
 
 		.wrapper.style1 {
 			background-image: none;
-			background-color: #282828;
+			background-color: #fff;
 		}
 
 		.wrapper.style2 {
@@ -2036,7 +2036,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: #fff;
 		text-align: center;
 		position: fixed;
 		left: 0;

@@ -1,195 +1,347 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>About Me</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.29.0/feather.min.js"></script>
+    
+    <title>Sanjida Suchi</title>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">Top</a></li>
-					<li><a href="#About Me">Work</a></li>
-					<li><a href="#Projects">Portfolio</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
+	<style>
+		body {
+		font-family: 'Poppins', sans-serif;
+	  }
+	</style>
+</head>
+<body class="bg-[#06021a]">
+    <nav class="bg-[#21212e] py-3 md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between mx-10 my-2">
+            <img src="images/pic00.png" class="select-none h-[40px] w-[40px]">
+            <span class="-mx-[1px] text-2xl cursor-pointer text-[#793fff] px-[10px]"><b>sanjida</b></span>
+            <span class="text-3xl cursor-pointer text-[#793fff] md:hidden block"><ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon></span>
+        </div>
+        <ul class="md:flex md:items-center md:z-auto md:static bg-[#21212e] absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"> <!--z-[-1]-->
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-white hover:text-[#793fff] duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#about" class="text-white hover:text-[#793fff] duration-500">About</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-white hover:text-[#793fff] duration-500">Experience</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#projects" class="text-white hover:text-[#793fff] duration-500">Projects</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <button class="bg-[#793fff] shadow-lg shadow-[#793fff]/30 text-white h-8 w-32 rounded-[5px]">👋 Contact</button>
+            </li>
+        </ul>
+    </nav>
+	<!-- hero -->
+    <section>
+		<div class="grid md:grid-cols-2 gap-12 max-w-7xl mx-auto py-16 px-6">
+            <!-- Left Side: Text Content -->
+            <div class="flex flex-col justify-center space-y-6 animate-[fadeIn_1s_ease-in]">
+                <div class="space-y-4">
+                    <h2 class="text-4xl md:text-5xl font-bold leading-tight">
+                        <span class="text-[#793fff]">👋 Hi, I'm</span>
+                        <br />
+                        <span class="text-white">Sanjida Suchi</span>
+                    </h2>
+                    
+                    <p class="mt-3 text-xl text-gray-300 font-light leading-relaxed">
+                        Geospatial Researcher | Earth Observation | Geoinformation & Geovisualization
+                    </p>
+                    
+                    <p class="text-gray-400 max-w-lg">
+                        Exploring Earth's dynamics through geospatial analysis and creating impactful visualizations
+                        for sustainable development and urban planning.
+                    </p>
+                </div>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.png" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<br>
-								<br>
-								<h1>Hi. I'm <strong>Sanjida Suchi</strong>.</h1>
-							</header>
-							<p>Geospatial Researcher</p>
-							
-						</div>
-					</div>
-				</div>
-			</article>
+                <!-- CTA Buttons -->
+                <div class="flex flex-wrap gap-4 mt-8">
+                    <button class="bg-[#793fff] text-white px-6 py-3 rounded-lg shadow-lg shadow-[#793fff]/30 hover:shadow-[#793fff]/50 transition-all duration-300 flex items-center gap-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-4l-4 4z" />
+                        </svg>
+                        Contact Me
+                    </button>
+                    <button class="border border-[#793fff] text-white px-6 py-3 rounded-lg hover:bg-[#793fff]/10 transition-all duration-300">
+                        View Portfolio
+                    </button>
+                </div>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-				
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-						
-								<h3>About Me</h3>
-								<p>I'm currently pursuing the <strong>Erasmus Mundus Joint Master (EMJM) in Copernicus Master in Digital Earth</strong>, a prestigious European study program focusing on Earth observation, geoinformation, geodatascience and geovisualization.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-						
-								<h3>Research Interest</h3>
-								<p>-GIS and EO for Disaster Risk Reduction<br>-EO for Sustainable Development and Urbanisation<br>-Geospatial Education and Communication<br>-Creation of user friendly maps and data bases </p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								
-								<h3>Objectives</h3>
-								<p>
-									-Pursue Ph.D. degree<br>
-									-Take part in research projects that are related to geosciences<br>
-									-Increase capacity for writing scientific articles<br>
-									-Skills in creation of maps and the analysis of data<br>
-								
-								</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article>
+                <!-- Social Links -->
+                <div class="flex gap-4 mt-6">
+                    <a href="#" class="text-gray-400 hover:text-[#793fff] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#793fff] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-[#793fff] transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Here’s some stuff I made recently.</h2>
+            <!-- Right Side: Image -->
+            <div class="flex justify-center items-center">
+                <div class="relative group">
+                    <!-- Gradient Border Effect -->
+                    <div class="absolute -inset-1 bg-gradient-to-r from-[#793fff] to-purple-600 rounded-lg blur opacity-30 group-hover:opacity-50 transition duration-1000"></div>
+                    
+                    <!-- Image Container -->
+                    <div class="relative">
+                        <img 
+                            src="images/pic00.png"
+                            alt="Sanjida Suchi" 
+                            class="rounded-lg shadow-2xl w-full max-w-md object-cover transform group-hover:scale-[1.01] transition duration-300"
+                        />
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-[#793fff]/10 rounded-full blur-xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-purple-600/10 rounded-full blur-xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+		
+		
+		
+    </section>
+	<section id="about" class="py-16 px-6 lg:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl text-white font-bold mb-12 text-center">
+                About <span class="text-[#793fff]">Me</span>
+            </h2>
+            <div class="bg-[#21212e] p-8 rounded-xl shadow-lg">
+                <p class="text-gray-300 leading-relaxed mb-6">
+                    I am a passionate geospatial researcher currently enrolled in the prestigious Erasmus Mundus Joint Master (EMJM) in Copernicus Master in Digital Earth program. This European study program has sharpened my expertise in Earth observation, geoinformation, geodatascience, and geovisualization.
+                </p>
+            </div>
+        </div>
+    </section>
 
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<p><strong>Eyetracking</strong></p><br>
-								<a class="image featured"><img src="images/01.png" alt="" /></a>
-								<h3><a href="Eyetracking.pdf">View Project</a></h3>
-								<p> To investigate participant attention and emotional responses using eye-tracking technology, focusing on visual stimuli presented through the map "Arctic Sea Ice Decline," and to analyze how participants interacted with map elements, particularly the legend and defined Areas of Interest (AOIs).</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<p><strong>Spatial Analysis</strong></p><br>
-								<a class="image featured"><img src="images/02.png" alt="" /></a>
-								<h3><a href="Methods-in-Spatial-Analysis-Assignment_1.pdf">View Project</a></h3>
-								<p>For the first task, I need to determine how many tourist attractions are located within 5, 10, 15, and 20 minutes walking distance from my Salzburg address. To do this, I selected a location using the sketch point tool. Then, I analyzed the walking distance from the address for 5, 10, 15, and 20 minutes.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<p><strong>EO Browser Assignment</strong></p><br>
-								<a class="image featured"><img src="images/03.png" alt="" /></a>
-								<h3><a href="EO-browser-Assignment.pdf">View Project</a></h3>
-								<p>To identify urban areas, vegetation, and water bodies within Salzburg city using Sentinel-2 data.Sentinel-2 imagery was selected for its high-resolution, multispectral capabilities, making it ideal for urban and environmental analysis. Custom scripts incorporating NDVI, NDWI and NDBI were utilized.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<p><strong>Radar Assignment</strong></p><br>
-								<a class="image featured"><img src="images/04.png" alt="" /></a>
-								<h3><a href="Radar-Assignment-2.pdf">View Project</a></h3>
-								<p>The goal of is to apply the techniques learned in the practical session to generate a displacement map using Sentinel-1 SAR datasets for a new study site affected by a geohazard (e.g., landslide, volcanic activity, or even another earthquake).</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<p><strong>Image Segmentation</strong></p><br>
-								
-								<a class="image featured"><img src="images/05.png" alt="" /></a>
-								<h3><a href="Image-Segmentation-Assignment.pdf">View Project</a></h3>
-								<p>To evaluate and compare the effectiveness of image segmentation techniques in eCognition and ArcGIS Pro using Sentinel-2 imagery, determining which software provides superior image object delineation for specific project requirements.</p>
-							</article>
-						</div>
+    <section id="research" class="py-16 px-6 bg-[#21212e] lg:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl text-white font-bold mb-12 text-center">
+                Research <span class="text-[#793fff]">Interests</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-[#1a1a24] p-6 rounded-xl flex gap-5 items-center ">
+                    <i data-feather="alert-triangle" class="text-[#793fff]  w-8 h-8 mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">GIS and EO for Disaster Risk Reduction</h3>
+                </div>
+                <div class="bg-[#1a1a24] p-6 rounded-xl flex gap-5 items-center ">
+                    <i data-feather="home" class="text-[#793fff] w-8 h-8 mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">EO for Sustainable Development and Urbanisation</h3>
+                </div>
+                <div class="bg-[#1a1a24] p-6 rounded-xl flex gap-5 items-center ">
+                    <i data-feather="book-open" class="text-[#793fff] w-8 h-8 mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">Geospatial Education and Communication</h3>
+                </div>
+                <div class="bg-[#1a1a24] p-6 rounded-xl flex gap-5 items-center ">
+                    <i data-feather="map" class="text-[#793fff] w-8 h-8 mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">Creation of User Friendly Maps and Databases</h3>
+                </div>
+            </div>
+        </div>
+    </section>
 
-					</div>
-					<footer>
-						
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+    <section id="objectives" class="py-16 px-6 lg:px-20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-3xl text-white font-bold mb-12 text-center">
+                Future <span class="text-[#793fff]">Objectives</span>
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-[#21212e] p-6 rounded-xl text-center">
+                    <i data-feather="award" class="text-[#793fff] w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">Pursue Ph.D. Degree</h3>
+                </div>
+                <div class="bg-[#21212e] p-6 rounded-xl text-center">
+                    <i data-feather="search" class="text-[#793fff] w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">Participate in Geoscience Research</h3>
+                </div>
+                <div class="bg-[#21212e] p-6 rounded-xl text-center">
+                    <i data-feather="edit" class="text-[#793fff] w-12 h-12 mx-auto mb-4"></i>
+                    <h3 class="text-white text-xl font-semibold mb-4">Scientific Writing</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="py-20 px-6">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-white mb-4">Featured <span class="text-[#793fff]">Projects</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">Exploring the intersection of geospatial technology and environmental analysis</p>
+        </div>
 
-		<!-- Contact -->
+        <!-- Projects Grid -->
+        <div id="projects" class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Eyetracking Project -->
+            <div class="group bg-[#21212e] rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-[#793fff]/20 transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-[#793fff]/80 to-purple-600/80 group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Eyetracking</h3>
+                    <p class="text-gray-400 text-sm mb-4">Analysis of participant attention and emotional responses to "Arctic Sea Ice Decline" map using eye-tracking technology.</p>
+                    <a href="#" class="inline-flex items-center text-[#793fff] hover:text-white transition-colors duration-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-			<article id="contact" class="wrapper style4">
-				<a class="image featured"><img src="iE-LOGO-1024x267.png" alt="" /></a>
-				<div class="container medium">
+            <!-- Spatial Analysis -->
+            <div class="group bg-[#21212e] rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-[#793fff]/20 transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-purple-600/80 to-[#793fff]/80 group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Spatial Analysis</h3>
+                    <p class="text-gray-400 text-sm mb-4">Walking distance analysis of tourist attractions in Salzburg using advanced GIS techniques.</p>
+                    <a href="#" class="inline-flex items-center text-[#793fff] hover:text-white transition-colors duration-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-					<div class="row">
+            <!-- EO Browser Assignment -->
+            <div class="group bg-[#21212e] rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-[#793fff]/20 transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-[#793fff]/80 to-indigo-600/80 group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">EO Browser Analysis</h3>
+                    <p class="text-gray-400 text-sm mb-4">Urban area identification using Sentinel-2 data with NDVI, NDWI, and NDBI indices.</p>
+                    <a href="#" class="inline-flex items-center text-[#793fff] hover:text-white transition-colors duration-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-								<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-								<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-								<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="#" class="icon brands fa-tumblr"><span class="label">Tumblr</span></a></li>
-								<li><a href="#" class="icon brands fa-google-plus"><span class="label">Google+</span></a></li>
-								<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; 2024 All rights reserved.</li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+            <!-- Radar Assignment -->
+            <div class="group bg-[#21212e] rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-[#793fff]/20 transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-indigo-600/80 to-[#793fff]/80 group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Radar Analysis</h3>
+                    <p class="text-gray-400 text-sm mb-4">Displacement mapping using Sentinel-1 SAR datasets for geohazard assessment.</p>
+                    <a href="#" class="inline-flex items-center text-[#793fff] hover:text-white transition-colors duration-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+            <!-- Image Segmentation -->
+            <div class="group bg-[#21212e] rounded-xl overflow-hidden hover:shadow-2xl hover:shadow-[#793fff]/20 transition-all duration-300">
+                <div class="relative overflow-hidden">
+                    <div class="h-48 bg-gradient-to-r from-[#793fff]/80 to-purple-600/80 group-hover:scale-105 transition-transform duration-300">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-white opacity-80" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-white mb-2">Image Segmentation</h3>
+                    <p class="text-gray-400 text-sm mb-4">Comparative analysis of image segmentation techniques in eCognition and ArcGIS Pro.</p>
+                    <a href="#" class="inline-flex items-center text-[#793fff] hover:text-white transition-colors duration-300">
+                        View Project
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+    
+  
+   
+    
+    <section>
+        <div class="ml-[25px] sm:ml-[180px] md:ml-[220px] lg:ml-[380px] xl:ml-[480px] 2xl:ml-[560px]">
+            <div class=" group mb-[20px] -mt-[20px] mx-[120px] px-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github text-white bg-[#21212e] rounded-full p-2 group-hover:bg-[#793fff] group-hover:text-white cursor-pointer duration-150" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                  </svg>
+            </div>
+            <div class=" group mb-[20px] px-3 -mt-[50px] mx-[160px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter text-white bg-[#21212e] rounded-full p-2 group-hover:bg-[#793fff] group-hover:text-white cursor-pointer duration-150" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg>
+            </div>
+            <div class="group mb-[20px] px-3 -mt-[50px] mx-[200px]">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-discord text-white bg-[#21212e] rounded-full p-2 group-hover:bg-[#793fff] group-hover:text-white cursor-pointer duration-150" viewBox="0 0 16 16">
+                    <path d="M13.545 2.907a13.227 13.227 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.19 12.19 0 0 0-3.658 0 8.258 8.258 0 0 0-.412-.833.051.051 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.041.041 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032c.001.014.01.028.021.037a13.276 13.276 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019c.308-.42.582-.863.818-1.329a.05.05 0 0 0-.01-.059.051.051 0 0 0-.018-.011 8.875 8.875 0 0 1-1.248-.595.05.05 0 0 1-.02-.066.051.051 0 0 1 .015-.019c.084-.063.168-.129.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.052.052 0 0 1 .053.007c.08.066.164.132.248.195a.051.051 0 0 1-.004.085 8.254 8.254 0 0 1-1.249.594.05.05 0 0 0-.03.03.052.052 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.235 13.235 0 0 0 4.001-2.02.049.049 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.034.034 0 0 0-.02-.019Zm-8.198 7.307c-.789 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612Zm5.316 0c-.788 0-1.438-.724-1.438-1.612 0-.889.637-1.613 1.438-1.613.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612Z"/>
+                  </svg>
+            </div>
+            <div class="absolute ml-[25px] m-auto left-0 right-0 sm:ml-[160px] md:mx-[200px] lg:ml-[350px] xl:ml-[500px] 2xl:ml-[580px]">
+                <p class="text-white mb-5 text-[13px] sm:text-[16px] md:text-[16px] lg:text-[16px] xl:text-[16px] 2xl:text-[16px]"><i class="bi bi-c-circle"></i> 2025 All rights reserved | Designed  by RaiyanRimon</p>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script><script>
+        feather.replace();
+    </script>
+   
+</body>
+</html> 

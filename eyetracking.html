@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eye Tracking Research</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#06021A] min-h-screen text-gray-200">
+    <nav class="bg-[#21212e] py-3 md:flex md:items-center md:justify-between">
+        <div class="flex items-center justify-between mx-10 my-2">
+            <img src="images/pic00.png" class="select-none h-[40px] w-[40px]">
+            <span class="-mx-[1px] text-2xl cursor-pointer text-[#793fff] px-[10px]"><b>sanjida</b></span>
+            <span class="text-3xl cursor-pointer text-[#793fff] md:hidden block"><ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon></span>
+        </div>
+        <ul class="md:flex md:items-center md:z-auto md:static bg-[#21212e] absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"> <!--z-[-1]-->
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-white hover:text-[#793fff] duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#about" class="text-white hover:text-[#793fff] duration-500">About</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#" class="text-white hover:text-[#793fff] duration-500">Experience</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <a href="#projects" class="text-white hover:text-[#793fff] duration-500">Projects</a>
+            </li>
+            <li class="mx-4 my-4 md:my-0">
+                <button class="bg-[#793fff] shadow-lg shadow-[#793fff]/30 text-white h-8 w-32 rounded-[5px]">Contact</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="container mx-auto p-8">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Left Side - Researcher Profile -->
+            <div class="md:col-span-1">
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg sticky top-8">
+                    <!-- Profile Image -->
+                    <div class="mb-6">
+                        <img src="images/pic00.png" alt="Researcher Profile" class="rounded-full w-48 h-48 mx-auto border-4 border-blue-500 shadow-lg"/>
+                    </div>
+
+                    <!-- Profile Info -->
+                    <div class="space-y-4">
+                        <h1 class="text-2xl font-bold text-blue-400 text-center">Sanjida Suchi</h1>
+                        <p class="text-blue-300 text-center font-medium">Geospatial Researcher</p>
+                        
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Research Focus</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Eye-tracking Analysis</li>
+                                <li>• Visual Attention Studies</li>
+                                <li>• User Experience Research</li>
+                                <li>• Spatial Data Visualization</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Tools & Technologies</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• RealEye Software</li>
+                                <li>• Heatmap Analysis</li>
+                                <li>• Data Visualization</li>
+                                <li>• Statistical Analysis</li>
+                            </ul>
+                        </div>
+
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Project ID</h2>
+                            <div class="text-gray-300">
+                                <p>Research ID: 0119445</p>
+                                <p>Focus Area: Arctic Sea Ice Decline</p>
+                                <p>Study Type: User Interaction Analysis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Research Content -->
+            <div class="md:col-span-2">
+                <div class="space-y-8">
+                    <!-- Research Header -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-4">Eye Tracking and Image Evaluation</h2>
+                        <p class="text-gray-300 mb-4">A Study on Visual Attention Patterns in Arctic Sea Ice Decline Map Analysis</p>
+                        <div class="mt-4 flex flex-wrap gap-4">
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Eye Tracking</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Attention Analysis</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Emotional Response</span>
+                            <span class="bg-blue-900 text-blue-200 px-3 py-1 rounded-full text-sm">Visual Cognition</span>
+                        </div>
+                    </div>
+
+                    <!-- Research Objectives -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Research Objectives</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Primary Goals</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• Track participant eye movements during map interaction</li>
+                                    <li>• Analyze attention distribution patterns</li>
+                                    <li>• Evaluate emotional responses to visual stimuli</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Data Quality</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• Ensure eye-tracking data integrity</li>
+                                    <li>• Validate emotional response measurements</li>
+                                    <li>• Maintain high sampling rate accuracy</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Methodology & Findings -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-6">Key Findings</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Heatmap Analysis</h4>
+                                <p class="text-gray-300 mb-4">
+                                    The heatmap visualization revealed distinct patterns in participant attention:
+                                </p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Yellow and red zones indicated high fixation areas</li>
+                                    <li>Blue and green tones showed areas of lower attention</li>
+                                    <li>Clear correlation between legend changes and attention patterns</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Emotional Response Data</h4>
+                                <p class="text-gray-300 mb-4">Analysis of emotional fluctuations revealed:</p>
+                                <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                    <li>Tracked "happy" and "surprise" emotional states</li>
+                                    <li>K-coefficient peaks indicating heightened engagement</li>
+                                    <li>Correlation between visual elements and emotional responses</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Technical Details -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Technical Implementation</h3>
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Data Collection</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• RealEye software implementation</li>
+                                    <li>• Continuous gaze tracking</li>
+                                    <li>• High-precision sampling rate</li>
+                                </ul>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">Quality Metrics</h4>
+                                <ul class="text-gray-300 space-y-2">
+                                    <li>• E-T Data Grade: Perfect rating</li>
+                                    <li>• Gaze tracking integrity: High accuracy</li>
+                                    <li>• Screen involvement: Consistent</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusions -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Research Impact</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            The eye-tracking survey provided valuable insights into participant attention and emotional responses to the "Arctic Sea Ice Decline" map. The use of heatmaps and Areas of Interest (AOIs) revealed key areas of visual focus, while emotional analysis added depth to understanding viewer interactions. The high-quality eye-tracking data ensures the credibility of findings and supports further exploration into visual cognitive processes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

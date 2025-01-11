@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Highlights for Salzburg using Sentinel-2 Data</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#06021A] min-h-screen text-gray-200">
+    <div class="container mx-auto md:p-8 p-3">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Left Side - Profile -->
+            <div class="md:col-span-1">
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg sticky top-8">
+                    <div class="mb-6">
+                        <img src="images/pic00.png" alt="Researcher Profile" class="rounded-full w-48 h-48 mx-auto border-4 border-[#793fff] shadow-lg"/>
+                    </div>
+                    <div class="space-y-4">
+                        <a href="/"> <h1 class="text-xl md:text-2xl font-bold text-blue-400 text-center">Sanjida Suchi</h1>
+                            <p class="text-blue-300 text-center font-medium text-sm md:text-base">Geospatial Researcher</p></a>
+                              <!-- Logos Section -->
+        <div class="flex justify-between flex-wrap items-center gap-4 py-3">
+            <img src="images/logo1.jpg" alt="Logo 1" class="w-20 h-12">
+            <img src="images/logo2.png" alt="Logo 2" class="w-20 bg-white p-1 h-12">
+            <img src="images/logo3.png" alt="Logo 3" class="w-20 bg-white h-12">
+            <img src="images/logo4.jpg" alt="Logo 4" class="w-28 h-12">
+        </div>
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Tools & Technologies</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Sentinel-1 SAR</li>
+                                <li>• SNAP Software</li>
+                                <li>• Snaphu</li>
+                                <li>• ArcGIS Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Assignment Content -->
+            <div class="md:col-span-2">
+                <div class="space-y-8">
+                    <!-- Header -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h2 class="md:text-3xl text-2xl font-bold text-blue-400 mb-4">City Highlights for Salzburg using Sentinel-2 Data</h2>
+                        <p class="text-gray-300 mb-4">This analysis aims to identify urban areas, vegetation, and water bodies within Salzburg city using Sentinel-2 data. The application of custom scripts utilizing NDVI, NDWI, and NDBI provides valuable insights into the city's structure and its relationship with natural environments.</p>
+                    </div>
+
+                    <!-- Goal and Objectives -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Goal and Objectives</h3>
+                        <p class="text-gray-300">
+                            The goal of this project is to identify and visualize urban areas, vegetation, and water bodies within Salzburg city. The objectives of the project include:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-300 mt-4 space-y-2">
+                            <li>Utilize Sentinel-2 imagery to detect and classify urban areas, vegetation, and water bodies.</li>
+                            <li>Apply NDVI, NDWI, and NDBI indices to preprocess the data and enhance feature classification.</li>
+                            <li>Provide an overview of Salzburg's urban expansion, vegetation, and water relations.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Data Used and Methodology -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Data Used & Methodology</h3>
+                        <p class="text-gray-300">
+                            Sentinel-2 imagery was selected for its high-resolution, multispectral capabilities, ideal for urban and environmental analysis. The following indices were used for preprocessing:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-300 mt-4 space-y-2">
+                            <li><strong>NDVI (Normalized Difference Vegetation Index):</strong> Used to highlight areas with a high probability of vegetation.</li>
+                            <li><strong>NDWI (Normalized Difference Water Index):</strong> Used to identify water bodies like rivers, lakes, and pools.</li>
+                            <li><strong>NDBI (Normalized Difference Built-up Index):</strong> Used to detect urban areas, focusing on rooftops and buildings.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Results and Observations -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Results and Observations</h3>
+                        <p class="text-gray-300">
+                            The results from the custom script using Sentinel-2 data highlighted three primary features within Salzburg city:
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-300 mt-4 space-y-2">
+                            <li><strong>Urban Areas (Rooftops and Buildings):</strong> Identified with red color, representing areas with high built-up features.</li>
+                            <li><strong>Vegetation Areas:</strong> Marked in green, showing regions with a high probability of vegetation.</li>
+                            <li><strong>Water Bodies:</strong> Depicted in blue, indicating rivers, pools, and the sea.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Visual Representation -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Visual Representation</h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">City Highlights (Using Custom Script)</h4>
+                                <img src="images/city01.png" alt="City Highlights" class="w-full rounded-lg">
+                                <figcaption class="text-gray-400 text-center mt-2">Figure 1: Highlights of Salzburg City showing Urban, Vegetation, and Water areas</figcaption>
+                            </div>
+                            <div class="bg-gray-800 p-6 rounded-lg">
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">True Color Representation</h4>
+                                <img src="images/city02.png" alt="True Color Representation" class="w-full rounded-lg">
+                                <figcaption class="text-gray-400 text-center mt-2">Figure 2: True Color Image of Salzburg City using Sentinel-2 data</figcaption>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Conclusion</h3>
+                        <p class="text-gray-300">
+                            The application of NDVI, NDWI, and NDBI indices using Sentinel-2 data provides valuable insights into Salzburg's urban environment and natural features. The results highlight the spatial distribution of built-up areas, vegetation, and water bodies, offering a comprehensive overview of the city’s landscape and potential for future urban planning and environmental management.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

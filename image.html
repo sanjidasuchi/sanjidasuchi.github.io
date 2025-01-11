@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Segmentation</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#06021A] min-h-screen text-gray-200">
+    <div class="container mx-auto md:p-8 p-3">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Left Side - Profile -->
+            <div class="md:col-span-1">
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg sticky top-8">
+                    <div class="mb-6">
+                        <img src="images/pic00.png" alt="Researcher Profile" class="rounded-full w-48 h-48 mx-auto border-4 border-[#793fff] shadow-lg"/>
+                    </div>
+                    <div class="space-y-4">
+                        <a href="/"> <h1 class="text-xl md:text-2xl font-bold text-blue-400 text-center">Sanjida Suchi</h1>
+                            <p class="text-blue-300 text-center font-medium text-sm md:text-base">Geospatial Researcher</p></a>
+                              <!-- Logos Section -->
+        <div class="flex justify-between flex-wrap items-center gap-4 py-3">
+            <img src="images/logo1.jpg" alt="Logo 1" class="w-20 h-12">
+            <img src="images/logo2.png" alt="Logo 2" class="w-20 bg-white p-1 h-12">
+            <img src="images/logo3.png" alt="Logo 3" class="w-20 bg-white h-12">
+            <img src="images/logo4.jpg" alt="Logo 4" class="w-28 h-12">
+        </div>
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Tools & Technologies</h2>
+                            <ul class="space-y-2 text-gray-300">
+                                <li>• Sentinel-1 SAR</li>
+                                <li>• SNAP Software</li>
+                                <li>• Snaphu</li>
+                                <li>• ArcGIS Pro</li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Assignment Content -->
+            <div class="md:col-span-2">
+                <div class="space-y-8">
+                    <!-- Header -->
+                    <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+                        <h2 class="text-3xl font-bold text-blue-400 mb-4">Image Segmentation</h2>
+                        <p class="text-gray-300 mb-4">To evaluate and compare the effectiveness of image segmentation techniques in eCognition and
+                            ArcGIS Pro using Sentinel-2 imagery, determining which software provides superior image object
+                            delineation for specific project requirements.</p>
+                    
+                    </div>
+
+                    <!-- Goal and Objectives -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Goal and Objectives</h3>
+                        <p class="text-gray-300">
+                            The primary goal of this project is to analyze and compare image segmentation techniques using eCognition and ArcGIS Pro to assess their effectiveness in geospatial analysis, particularly for detecting ground deformation caused by seismic activities.
+                        </p>
+                        <ul class="list-disc pl-6 text-gray-300 mt-4 space-y-2">
+                            <li>Evaluate the accuracy of segmentation techniques in eCognition and ArcGIS Pro.</li>
+                            <li>Assess the efficiency and time required for image processing in both software tools.</li>
+                            <li>Identify the strengths and limitations of each tool in handling complex geospatial data.</li>
+                            <li>Provide recommendations for selecting appropriate software based on specific project needs.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Key Findings -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Key Findings</h3>
+                        <p class="text-gray-300 leading-relaxed">
+                            Image segmentation is a core computer vision task that divides the image into several objects or important parts. The challenge is to reconstruct images by breaking them into simpler parts for better production and understanding. In this report, Sentinel-2 imagery is used to compare the segmentation techniques in eCognition and ArcGIS Pro, focusing on accuracy, efficiency, and object delineation.
+                        </p>
+                    </div>
+
+                    <!-- eCognition vs. ArcGIS Pro -->
+                    <div class="bg-gray-900 rounded-xl md:p-8 p-3 p-3 shadow-lg">
+                        <h3 class="text-2xl font-semibold text-blue-400 mb-4">Comparison: eCognition vs. ArcGIS Pro</h3>
+                        <div class="space-y-6">
+                            <div class="bg-gray-800 md:p-6 p-3 rounded-lg">
+                                <figure class="mb-4">
+                                    <img src="images/ecognition.png" alt="eCognition Segmentation" class="w-full rounded-lg">
+                                    <figcaption class="text-gray-400 text-center mt-2">Figure 1: Image segmentation using eCognition</figcaption>
+                                </figure>
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">eCognition</h4>
+                                <p class="text-gray-300">
+                                    Despite parameter adjustments, eCognition sometimes fails to correctly detect certain areas. For instance:
+                                    <ul class="list-disc pl-6">
+                                        <li>The lake is significantly over-segmented into multiple regions.</li>
+                                        <li>Borders between segments, especially in hilly areas, are often poorly defined and jagged.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                            <div class="bg-gray-800 md:p-6 p-3 rounded-lg">
+                                <figure class="mb-4">
+                                    <img src="images/arcgis.png" alt="ArcGIS Pro Segmentation" class="w-full rounded-lg">
+                                    <figcaption class="text-gray-400 text-center mt-2">Figure 2: Image segmentation using ArcGIS Pro</figcaption>
+                                </figure>
+                                <h4 class="text-xl font-semibold text-blue-300 mb-3">ArcGIS Pro</h4>
+                                <p class="text-gray-300">
+                                    ArcGIS Pro under-segments in some areas, merging regions that should remain separate. However:
+                                    <ul class="list-disc pl-6">
+                                        <li>It can correctly detect areas like the lake with better accuracy.</li>
+                                    </ul>
+                                    Both software packages require manual parameter adjustments to achieve optimal results, depending on the project's specific needs.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

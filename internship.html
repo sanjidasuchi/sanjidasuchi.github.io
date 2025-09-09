@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remote Sensing Landslide Internship - Z_GIS Salzburg</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#06021A] min-h-screen text-gray-200">
+    <div class="container mx-auto p-3 md:p-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Left Side - Profile -->
+            <div class="md:col-span-1">
+                <div class="bg-gray-900 rounded-xl p-6 shadow-lg profile-sticky md:sticky md:top-8">
+                    <!-- Profile Image -->
+                    <div class="mb-6">
+                        <img src="/images/pic00.png" alt="Intern Profile" class="rounded-full w-24 md:w-48 h-24 md:h-48 mx-auto border-4 border-[#793fff] shadow-lg"/>
+                    </div>
+
+                    <!-- Profile Info -->
+                    <div class="space-y-4">
+                        <a href="/"> 
+                            <h1 class="text-xl md:text-2xl font-bold text-blue-400 text-center">Most Sanjida Anjum Suchi</h1>
+                            <p class="text-blue-300 text-center font-medium text-sm md:text-base">Geospatial Researcher</p>
+                        </a>
+                        
+                        <!-- Logos Section -->
+                        <div class="flex justify-between flex-wrap items-center gap-4 py-3">
+                            <img src="images/logo1.jpg" alt="Logo 1" class="w-20 h-12">
+                            <img src="images/logo2.png" alt="Logo 2" class="w-20 bg-white p-1 h-12">
+                            <img src="images/logo3.png" alt="Logo 3" class="w-20 bg-white h-12">
+                            <img src="images/logo4.jpg" alt="Logo 4" class="w-28 h-12">
+                        </div>
+
+                        <!-- Program Details -->
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Internship Details</h2>
+                            <ul class="space-y-2 text-gray-300 text-sm md:text-base">
+                                <li>• Type: Research Internship</li>
+                                <li>• Duration: April – June 2024</li>
+                                <li>• Location: Salzburg, Austria</li>
+                                <li>• Host: Z_GIS, University of Salzburg</li>
+                            </ul>
+                        </div>
+
+                        <!-- Host Organization -->
+                        <div class="border-t border-gray-700 pt-4">
+                            <h2 class="text-lg font-semibold mb-2 text-blue-400">Host Organization</h2>
+                            <div class="text-gray-300 text-sm md:text-base">
+                                <p>Department of Geoinformatics – Z_GIS</p>
+                                <p>Paris Lodron University Salzburg</p>
+                                <p>Austria</p>
+                                <p>Supervisor: Dr. Daniel Hölbling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Internship Content -->
+            <div class="md:col-span-2">
+                <div class="space-y-6 md:space-y-8">
+                    <!-- Header -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h2 class="text-xl md:text-3xl font-bold text-blue-400 mb-4">Remote Sensing-Based Mapping and Analysis of Landslides to Support Humanitarian Aid</h2>
+                        <p class="text-gray-300 mb-4 text-sm md:text-base">Internship | April – June 2024 | Department of Geoinformatics (Z_GIS), University of Salzburg, Austria</p>
+                        <div class="mt-4 flex flex-wrap gap-2 md:gap-4">
+                            <span class="bg-blue-900 text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Remote Sensing</span>
+                            <span class="bg-blue-900 text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Disaster Risk Reduction</span>
+                            <span class="bg-blue-900 text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">Humanitarian Aid</span>
+                            <span class="bg-blue-900 text-blue-200 px-2 md:px-3 py-1 rounded-full text-xs md:text-sm">GIS & GEE</span>
+                        </div>
+                    </div>
+
+                    <!-- Overview -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h3 class="text-lg md:text-2xl font-semibold text-blue-400 mb-4">Overview</h3>
+                        <p class="text-gray-300 text-sm md:text-base mb-4 leading-relaxed">
+                            I completed a 12-week internship at Z_GIS within the Earth Observation and Natural Hazards Research Group, focusing on landslide mapping and disaster risk reduction in southeastern Africa (Malawi, Madagascar, Mozambique). The project addressed the impacts of Cyclone Freddy (2023), which triggered widespread flooding and slope failures.
+                        </p>
+                        
+                    </div>
+
+                    <!-- Key Tasks -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h3 class="text-lg md:text-2xl font-semibold text-blue-400 mb-4">Key Tasks</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm md:text-base list-disc pl-5">
+                            <li>Evaluated EO-based landslide services (e.g., UGLC)</li>
+                            <li>Compiled a landslide events table for Malawi</li>
+                            <li>Collected and documented GIS datasets (DEM, LULC, rainfall, forest change)</li>
+                            <li>Conducted manual landslide digitization in Malawi and Madagascar</li>
+                            <li>Implemented Google Earth Engine workflows (NDVI loss, Sentinel-1 backscatter)</li>
+                            <li>Tested ESA Charter Mapper platform for rapid disaster mapping</li>
+                            <li>Produced accuracy checks and preliminary reference datasets</li>
+                            <li>Contributed to AGIT conference dissemination (poster/StoryMap)</li>
+                        </ul>
+                    </div>
+
+                    <!-- Results -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h3 class="text-lg md:text-2xl font-semibold text-blue-400 mb-4">Results</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm md:text-base list-disc pl-5">
+                            <li>Dataset library for Malawi</li>
+                            <li>Digitized landslide polygons and validation material</li>
+                            <li>NDVI-based change detection maps (Sentinel-2)</li>
+                            <li>Madagascar landslide reference dataset</li>
+                            <li>Workflow documentation for Charter Mapper</li>
+                        </ul>
+                    </div>
+
+                    <!-- Learning Outcomes -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h3 class="text-lg md:text-2xl font-semibold text-blue-400 mb-4">Learning Outcomes</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm md:text-base list-disc pl-5">
+                            <li>Gained technical skills in remote sensing, GEE, and Charter Mapper</li>
+                            <li>Strengthened expertise in hazard mapping and accuracy assessment</li>
+                            <li>Understood challenges of mapping in data-poor tropical regions</li>
+                            <li>Improved research communication through reporting and presentations</li>
+                        </ul>
+                    </div>
+
+                    <!-- Future Perspectives -->
+                    <div class="bg-gray-900 rounded-xl p-4 md:p-8 shadow-lg">
+                        <h3 class="text-lg md:text-2xl font-semibold text-blue-400 mb-4">Future Perspectives</h3>
+                        <ul class="text-gray-300 space-y-2 text-sm md:text-base list-disc pl-5">
+                            <li>Incorporating higher-resolution optical and SAR data (PlanetScope, VHR, Sentinel-1)</li>
+                            <li>Expanding validation with field surveys or citizen science</li>
+                            <li>Enhancing integration of EO products in humanitarian workflows</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
